@@ -98,14 +98,7 @@
           }
  
  
-   
- 
- 
-   
-   h1 {
-    font-size: 50px;
- 
-   }
+
  
    
     </style>
@@ -115,16 +108,16 @@
             var ranNum = 0;
             var currentGuess = 0;
             var guessCount = 0
- 
+            var randomnumber = Math.floor(Math.random() * (maximum - minimum + 1)) + minimum;
         function numGuess() {
             currentGuess= document.getElementById("guessNum").value;
  
-            document.getElementById("footer").innerHTML="you have guessed " + guessNum;
+            document.getElementById("footer").innerHTML="you have guessed " + guess;
  
         }
         function randomNumber(min=0, max=100) {
  
-            return Math.random() * (100 - 1) + 1;
+            randomnumber
  
         }
  
