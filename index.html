@@ -105,17 +105,16 @@
  
  
         <script>
-            var ranNum = 0;
+            var ranNum = Math.floor(Math.random(min=1, max=100) * (maximum - minimum + 1)) + minimum;
             var currentGuess = 0;
             var guessCount = 0
-            var randomnumber = Math.floor(Math.random() * (maximum - minimum + 1)) + minimum;
         function numGuess() {
             currentGuess= document.getElementById("guessNum").value;
  
             document.getElementById("footer").innerHTML="you have guessed " + guessCount;
  
         }
-        function randomNumber(min=0, max=100) {
+        function randomNumber(min=1, max=100) {
  
             randomnumber
  
